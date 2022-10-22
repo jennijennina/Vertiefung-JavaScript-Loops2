@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ergebnisvorschau</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <p id="nameIt">Vertiefung JavaScript – Loops 2</p>
+    <button id="darkModeButton" class="darkModeButton">Change Theme</button>
+    <section id="nameItSection">
+      <div>
+        <input id="inputUser" type="number" />
+        <button class="btn" onclick="btn()">Loop Me</button>
+        <p id="output"></p>
+        <input id="inputUser2" type="number" />
+        <button class="btn" onclick="btn2()">Loop Me</button>
+        <p id="output2"></p>
+        <!-- ====== Lev3_4js ======-->
+        <div>
+          <h1>Gib mir eine Zahl</h1>
+          <p>
+            Ich werde ALLE Zahlen bis zu dieser Zahl addieren, wenn sie durch
+            die ausgewählten Zahen teilbar sind!
+          </p>
+        </div>
+        <div id="Zahlen">
+          <label for="maxNumber" id="maxNum">Maximale Zahl</label>
+          <input id="inputUser3" type="number" />
+          <label for="firstNumber">Erste Zahl</label>
+          <select name="Erste Zahl" id="firstNum">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <label for="secondNumber">Zweite Zahl</label>
+          <select name="Zweite Zahl" id="secondNum">
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+          </select>
+          <button class="btn" onclick="btn3()">Count me</button>
+          <p id="output3">Summe</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

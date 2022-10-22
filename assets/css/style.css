@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Lato"), local("Lato-Regular"),
+    url(../fonts/Lato/Lato-Regular.ttf) format("truetype");
+}
+:root {
+  --primary-color: #21272d;
+  --secondary-color: cornflowerblue;
+  --third-color: cornflowerblue;
+  --fourth-color: rgb(122, 119, 119);
+  --fifth-color: cornflowerblue;
+}
+.dark_mode {
+  --primary-color: #fff;
+  --secondary-color: greenyellow;
+  --third-color: greenyellow;
+  --fourth-color: rgb(122, 119, 119);
+  --fifth-color: #000;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: var(--primary-color);
+}
+#nameIt {
+  font-family: "Lato";
+  color: var(--fifth-color);
+  text-align: center;
+  margin-top: 50px;
+  font-size: 32px;
+}
+#nameItSection {
+  height: 30vw;
+  width: 50vw;
+  border: 3px solid var(--third-color);
+  position: relative;
+  margin: 5% auto;
+  padding: 5px;
+  background-color: var(--fourth-color);
+}
+.darkModeButton {
+  height: 25px;
+  width: 120px;
+  margin: 15px auto;
+  display: block;
+  background: var(--secondary-color);
+  color: var(--sixth-color);
+  border: none;
+  border-radius: 100px;
+  transition: 100px ease;
+  user-select: none;
+}
+/* ========= AB HIER AUFGABE ========= */
+body {
+  padding: 5rem;
+}
+div {
+  margin-top: 1.3rem;
+}
+p {
+  margin-top: 0.5rem;
+}
+div p {
+  width: 22rem;
+}
+.inputUser {
+  display: block;
+  margin: 0.3rem 0rem 0.3rem 0rem;
+  background-color: aqua;
+}
