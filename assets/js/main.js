@@ -138,25 +138,32 @@ let output3 = document.getElementById("output3");
 let firstNum = document.getElementById("firstNum");
 let secondNum = document.getElementById("secondNum");
 
-function btn3() {
+// Funktion Ausrechnen
+function calculate() {
+  // array;
+  maxNum = [];
+  // Variablen bennenen und deklarieren
+  let c = Number(inputUser3.value);
+  let n = Number(firstNum.value);
+  let m = Number(secondNum.value);
+  let z = Number(output3.value);
+  let summe = 0;
+  if (c == "") {
+    alert("Fehlermeldung! Das Feld darf nicht leer sein");
+    return;
+  }
   if (n === m) {
     alert(
       "Fehlermeldung! Die selektierten Zahlen dürfen nicht identisch sein!"
     );
     return;
   }
-  if (c === "") alert("Fehlermeldung! Das Feld darf nicht leer sein");
-  return;
-}
-// array
-maxNum = [];
-let c = Number(inputUser3.value);
-let n = Number(firstNum.value);
-let m = Number(secondNum.value);
-let z = Number(output3.value);
-//for Loop
-for (let e = 0; c < +e; e++) {
-  if ((e % +n == 0 + (e % +m)) == 0) {
-    z.push(e);
+  //for Loop
+  for (let p = 0; p < c; p++) {
+    if (p % n == 0 || p % m == 0) {
+      summe += p;
+    }
+    // output innerHTML
+    output3.innerHTML = summe;
   }
 }
